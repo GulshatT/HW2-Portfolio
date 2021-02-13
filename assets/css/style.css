@@ -1,0 +1,102 @@
+:root {
+    --white: rgb(223, 240, 240);
+    --main: rgb(243, 221, 221);
+    --blue: darkcyan;
+}
+
+main {
+    flex-wrap: wrap;
+}
+    
+}
+body{
+    background-color: var(--main);
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+    padding: 0;
+}
+
+header {
+    color: var(--white);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 28px;
+    padding: 20px;
+    background-color: var(--blue);
+    }
+
+header h1 {
+    display: inline-block;
+    font-size: 42px;
+}
+
+.nav {
+    padding-top: 0;
+    float: right;
+    margin-right: 20px;
+    margin: 0;  
+}
+
+a:hover {
+    background-color: hsl(12, 74%, 46%);
+
+}
+header nav ul li{
+    display: inline-block;
+    padding:0;
+}
+
+a {
+    color: rgb(223, 240, 240);
+    cursor: pointer;
+}
+
+.picture {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position:center;
+    background-image: url("../images/gulshat.jpeg");
+}
+main section {
+    color: rgb(7, 54, 7);
+}
+
+main section img {
+    width: 300px;
+    display: flex;
+}
+
+.wrapper {
+    float: right;
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.work {
+    width: 1280px;
+    min-height: 500px;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+}
+.contact a{
+    color:rgb(7, 54, 7);
+}
+
+img {
+    margin: 0 0 170px;
+    padding: 10px;
+    float: left;
+ }
+img:hover {
+    background-color: hsl(177, 86%, 66%);
+}
+footer {
+    padding: 30px;
+}
+@media screen and (max-width:768px) 
