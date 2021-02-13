@@ -2,6 +2,10 @@
     --white: rgb(223, 240, 240);
     --main: rgb(240, 219, 219);
     --blue: darkcyan;
+    --darkgreen: rgb(7, 54, 7);
+    --aqua: hsl(177, 86%, 66%);
+    --black: rgb(34, 33, 33);
+    --hover: hsl(12, 74%, 46%);
 }
 
 main {
@@ -16,6 +20,10 @@ body{
     padding: 0;
 }
 
+.wrapper_wrap {
+    margin: 0 auto;
+    width: 1000px;
+}
 header {
     color: var(--white);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -37,7 +45,7 @@ header h1 {
 }
 
 a:hover {
-    background-color: hsl(12, 74%, 46%);
+    background-color: var(--hover);
 }
 
 header nav ul li{
@@ -46,7 +54,7 @@ header nav ul li{
 }
 
 a {
-    color: rgb(223, 240, 240);
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -59,12 +67,15 @@ a {
     background-image: url("../images/gulshat.jpeg");
 }
 main section {
-    color: rgb(7, 54, 7);
+    color: var(--darkgreen);
 }
 
 main section img {
     width: 300px;
-    display: flex;
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 10%;
 }
 
 .wrapper h2 {
@@ -88,23 +99,25 @@ p {
     margin: 0 auto;
     font-size: 35px;
 }
+
 .content_img {
     position: relative;
     font-family: sans-serif;
-    padding: 5px;
+    padding: 10px;
     float: right;
- }
+}
 
-img:hover {
-    background-color: hsl(177, 86%, 66%);
+.content_img:hover {
+    background-color: var(--aqua);
+    border-radius: 5%;
 }
 
 .content_img div {
     position: absolute;
     bottom: 0;
     right: 0;
-    background: black;
-    color: white;
+    background: var(--black);
+    color: var(--white);
     margin-bottom: 5px;
     font-family: sans-serif;
     opacity: 0;
@@ -122,7 +135,7 @@ img:hover {
 }
 
 .contact a{
-    color:rgb(7, 54, 7);
+    color: var(--darkgreen);
 }
 
 .contact h3 {
@@ -130,7 +143,7 @@ img:hover {
     font-size: 35px;
     float: left;
     width: 600px;
-    padding: 30px;
+    padding: 20px;
     margin: 0 auto;
     font-size: 35px;
 }
@@ -139,14 +152,14 @@ img:hover {
     padding: 40px;
     float: right;
     margin-right: 20px;
-    margin: 20 20 20 20; 
-    font-size:25px;
+    margin: 10 10 10 10; 
+    font-size:20px;
 }
 
 footer {
     font-family: cursive;
     font-size: 20px;
-    padding: 550px;
+    padding: 600px;
     text-align: center;
 }
 
