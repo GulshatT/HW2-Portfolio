@@ -39,8 +39,8 @@ header h1 {
 
 a:hover {
     background-color: hsl(12, 74%, 46%);
-
 }
+
 header nav ul li{
     display: inline-block;
     padding:0;
@@ -68,13 +68,20 @@ main section img {
     display: flex;
 }
 
-.wrapper {
-    float: right;
+.wrapper h2 {
+    float: left;
     width: 600px;
-    padding: 20px;
+    padding: 30px;
     margin: 0 auto;
+    font-size: 35px;
 }
 
+p {
+    font-size: 20px;
+    padding: 15px;
+    text-align: auto;
+
+}
 .work {
     width: 1280px;
     min-height: 500px;
@@ -88,13 +95,39 @@ main section img {
     color:rgb(7, 54, 7);
 }
 
-img {
-    margin: 0 0 170px;
-    padding: 10px;
+.content_img {
+    position: relative;
+    width: 200px;
+    height: 200px;
     float: left;
+    margin-right: 10px;
  }
 img:hover {
     background-color: hsl(177, 86%, 66%);
+}
+
+.content_img div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0s,opacity 0.5s;
+    transition: visability 0s, opacity 0.5s;
+}
+.content_img:hover div {
+    cursor: pointer;
+}
+
+.content_img:hover div {
+    width: 150px;
+    padding: 8 px 15px;
+    visibility: visible;
+    opacity: 0.7;
 }
 footer {
     padding: 30px;
