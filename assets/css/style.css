@@ -90,10 +90,10 @@ main section img {
 }
 
 p {
-    font-size: 20px;
-    padding: 20px;
+    font-size: 19px;
+    padding: 25px;
     text-align: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
 }
 
@@ -109,13 +109,19 @@ p {
     display: inline-flex;
     float: left;
 }
+
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .vl {
-    border-left: 6px solid var(--darkgreen);
-    height: 600px;
+    border-left: 5px solid var(--darkgreen);
+    height: 840px;
     position: absolute;
     left: 20%;
     margin-left: -3px;
-    margin-top: 32%;
+    margin-top: 35%;
     top: 0;
 
 }
@@ -179,8 +185,12 @@ p {
 footer {
     font-family: cursive;
     font-size: 20px;
-    padding: 450px;
+    padding: 750px;
     text-align: center;
 }
 
-@media screen and (max-width: 350px) 
+@media screen and (max-width: 800px) {
+    body {
+        flex-wrap: wrap;
+    }
+}
