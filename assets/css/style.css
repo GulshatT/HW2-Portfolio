@@ -1,14 +1,13 @@
 :root {
     --white: rgb(223, 240, 240);
-    --main: rgb(243, 221, 221);
+    --main: rgb(240, 219, 219);
     --blue: darkcyan;
 }
 
 main {
     flex-wrap: wrap;
 }
-    
-}
+
 body{
     background-color: var(--main);
     margin: 0;
@@ -23,7 +22,7 @@ header {
     font-size: 28px;
     padding: 20px;
     background-color: var(--blue);
-    }
+}
 
 header h1 {
     display: inline-block;
@@ -80,28 +79,22 @@ p {
     font-size: 20px;
     padding: 15px;
     text-align: auto;
-
-}
-.work {
-    width: 1280px;
-    min-height: 500px;
-    margin: 70px auto 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    position: relative;
-}
-.contact a{
-    color:rgb(7, 54, 7);
 }
 
+.work h2 {
+    float: left;
+    width: 600px;
+    padding: 30px;
+    margin: 0 auto;
+    font-size: 35px;
+}
 .content_img {
     position: relative;
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-right: 10px;
+    font-family: sans-serif;
+    padding: 5px;
+    float: right;
  }
+
 img:hover {
     background-color: hsl(177, 86%, 66%);
 }
@@ -116,20 +109,45 @@ img:hover {
     font-family: sans-serif;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0s,opacity 0.5s;
-    transition: visability 0s, opacity 0.5s;
-}
-.content_img:hover div {
-    cursor: pointer;
+    -webkit-transition: 0s,opacity 0.5s linear;
+    transition: visability 0s, opacity 0.5s linear;
 }
 
 .content_img:hover div {
     width: 150px;
-    padding: 8 px 15px;
+    padding: 8px 15px;
     visibility: visible;
     opacity: 0.7;
+    cursor: pointer;
 }
-footer {
+
+.contact a{
+    color:rgb(7, 54, 7);
+}
+
+.contact h3 {
+    float:left;
+    font-size: 35px;
+    float: left;
+    width: 600px;
     padding: 30px;
+    margin: 0 auto;
+    font-size: 35px;
 }
-@media screen and (max-width:768px) 
+
+.contact ul li {
+    padding: 40px;
+    float: right;
+    margin-right: 20px;
+    margin: 20 20 20 20; 
+    font-size:25px;
+}
+
+footer {
+    font-family: cursive;
+    font-size: 20px;
+    padding: 550px;
+    text-align: center;
+}
+
+@media screen and (max-width:800px) 
