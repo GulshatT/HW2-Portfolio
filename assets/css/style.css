@@ -6,7 +6,9 @@
     --aqua: hsl(177, 86%, 66%);
     --black: rgb(34, 33, 33);
     --hover: hsl(12, 74%, 46%);
+    --lavender: rgb(21, 21, 128);
 }
+
 
 main {
     flex-wrap: wrap;
@@ -20,7 +22,7 @@ body{
     padding: 0;
 }
 
-.wrapper_wrap {
+.wrapper_w{
     margin: 0 auto;
     width: 1000px;
 }
@@ -46,6 +48,7 @@ header h1 {
 
 a:hover {
     background-color: var(--hover);
+    cursor: hand;
 }
 
 header nav ul li{
@@ -88,8 +91,10 @@ main section img {
 
 p {
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
     text-align: auto;
+    margin-bottom: 30px;
+
 }
 
 .work h2 {
@@ -98,6 +103,21 @@ p {
     padding: 30px;
     margin: 0 auto;
     font-size: 35px;
+}
+ 
+.work {
+    display: inline-flex;
+    float: left;
+}
+.vl {
+    border-left: 6px solid var(--darkgreen);
+    height: 600px;
+    position: absolute;
+    left: 20%;
+    margin-left: -3px;
+    margin-top: 32%;
+    top: 0;
+
 }
 
 .content_img {
@@ -159,8 +179,8 @@ p {
 footer {
     font-family: cursive;
     font-size: 20px;
-    padding: 600px;
+    padding: 450px;
     text-align: center;
 }
 
-@media screen and (max-width:800px) 
+@media screen and (max-width: 798px) 
